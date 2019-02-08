@@ -1,29 +1,49 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
+<head>
     <link rel="stylesheet" type="text/css" href="css/main.css">
-  </head>
+</head>
 
-  <body>
+<body>
     <div id="container">
-      <input type="text" class="input-search" placeholder="Search or add item" />
-      <br /><br />
-      <button class="btn btn-bug">bug</button>
-      <button class="btn btn-defect">defect</button>
-      <button class="btn btn-feature">feature request</button>
-      <button class="btn btn-progress">in progress</button>
-      <button class="btn btn-process">to process</button>
-      <hr />
-      <ul>
-        <li>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </li>
-      </ul>
+        <div class="input-group">
+            <form>
+                <input type="text" class="input-search" id="input-search" placeholder="Search or add item" required />
+                <input type="submit" value="ADD" class="input-search-submit" id="input-search-submit" />
+            </form>
+        </div>
+        <div class="btn-container" id="btn-container">
+            <button class="btn btn-bug">bug</button>
+            <button class="btn btn-defect">defect</button>
+            <button class="btn btn-request">feature request</button>
+            <button class="btn btn-progress">in progress</button>
+            <button class="btn btn-process">to process</button>
+        </div>
+        <hr />
+        <ul class="items-list" id="items-list">
+            <li>
+                <input type="checkbox" class="item-checkbox" /> Reply to message notifications directly in email
+                <button class="btn btn-request">feature request</button>
+                <button class="btn btn-progress">in progress</button>
+            </li>
+            <li>
+                <input type="checkbox" class="item-checkbox" /> Remember choice when switching between multiple ads
+                <button class="btn btn-bug">bug</button>
+            </li>
+            <li>
+                <input type="checkbox" class="item-checkbox" /> Replace Joyride with Intercom messages
+                <button class="btn btn-process">to process</button>
+            </li>
+            <li>
+                <input type="checkbox" class="item-checkbox" /> Fix maintenance pages to web servers
+                <button class="btn btn-defect">defect</button>
+            </li>
+        </ul>
     </div>
-	
-	<!-- Scripts -->
+
+    <!-- Scripts -->
     <script src="js/main.js"></script>
-  </body>
+</body>
 
 </html>
