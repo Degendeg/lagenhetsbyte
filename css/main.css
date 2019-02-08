@@ -1,0 +1,61 @@
+html {
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Mukta:700");
+* {
+  box-sizing: border-box;
+}
+*::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mukta", sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  min-height: 100vh;
+  background: #f3f8fa;
+}
+
+@supports (display: grid) {
+  body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.625rem;
+    grid-template-areas: ". main main ." ". main main .";
+  }
+
+  #container {
+    grid-area: main;
+    align-self: center;
+    justify-self: center;
+	position: fixed;
+	top: 0;
+	margin-left: 10%;
+	margin-top: 10%;
+  }
+}
+
+#container {
+	position: absolute;
+	left: 0;
+	margin-left: 6%;
+	margin-top: 6%;
+}
+
+.btn {
+  margin: .2em .1em;
+  font-weight: 700;
+  font-size: 1em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  border: none;
+  border-radius: 5px;
+  padding: 0.65em 1.3em;
+}
