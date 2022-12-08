@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A fullstack challenge.",
   "dependencies": {
-    "express": "^4.15.3",
+    "express": "^4.18.2",
     "nodemon": "^1.11.0",
     "socket.io": "^2.0.3"
   }
